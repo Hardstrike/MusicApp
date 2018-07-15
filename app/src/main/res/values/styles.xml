@@ -1,0 +1,61 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="selection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/song_list_margins</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/selection</item>
+    </style>
+
+    <style name="category">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/song_list_margins</item>
+        <item name="android:layout_marginLeft">@dimen/song_list_margins</item>
+        <item name="android:layout_marginRight">@dimen/song_list_margins</item>
+        <item name="android:layout_marginBottom">@dimen/song_list_margins</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/category</item>
+    </style>
+
+    <style name="song_name">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/song_list_margins</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/category</item>
+    </style>
+
+    <style name="song_artist">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/song_list_margins</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/artist</item>
+    </style>
+
+    <style name="current_song_name">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/song_list_margins</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/current_song</item>
+    </style>
+
+    <style name="current_song_artist">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/song_list_margins</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/current_artist</item>
+    </style>
+
+</resources>

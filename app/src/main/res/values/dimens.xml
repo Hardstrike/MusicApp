@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="song_list_margins">16dp</dimen>
+    <dimen name="icon_padding">15dp</dimen>
+    <dimen name="song_pic_margin">50dp</dimen>
+    <dimen name="song_pic_height">300dp</dimen>
+    <dimen name="lnd_song_pic_margin">20dp</dimen>
+    <dimen name="lnd_song_pic_height">150dp</dimen>
+    <dimen name="button_icon_size">50dp</dimen>
+
+    <dimen name="selection">24sp</dimen>
+    <dimen name="category">16sp</dimen>
+    <dimen name="artist">12sp</dimen>
+    <dimen name="current_song">18sp</dimen>
+    <dimen name="current_artist">14sp</dimen>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context="com.example.android.musicapp.nowplaying">
+
+    <ImageView
+        android:id="@+id/song_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/song_pic_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/song_pic_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bigtext" />
+
+    <TextView
+        android:id="@+id/current_song_name"
+        style="@style/current_song_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/song_pic"
+        android:layout_marginLeft="@dimen/song_list_margins"
+        android:layout_marginRight="@dimen/song_list_margins"
+        android:background="@color/colorPrimaryDark"
+         />
+
+    <TextView
+        android:id="@+id/current_song_artist"
+        style="@style/current_song_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_song_name"
+        android:layout_marginLeft="@dimen/song_list_margins"
+        android:layout_marginRight="@dimen/song_list_margins"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/button_icon_size"
+            android:layout_height="@dimen/button_icon_size"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/song_list_margins"
+            android:contentDescription="@string/back"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="@dimen/button_icon_size"
+            android:layout_height="@dimen/button_icon_size"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/song_list_margins"
+            android:contentDescription="@string/play"
+            android:scaleType="centerCrop"
+            android:src="@drawable/play" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="@dimen/button_icon_size"
+            android:layout_height="@dimen/button_icon_size"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/song_list_margins"
+            android:contentDescription="@string/stop"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stop" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

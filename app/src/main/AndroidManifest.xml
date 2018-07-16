@@ -16,11 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Country" />
-        <activity android:name=".Jazz" />
-        <activity android:name=".Pop" />
-        <activity android:name=".Instrumental" />
-        <activity android:name=".nowplaying" />
+        <activity android:name=".Country"
+            android:label="Country Music"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Jazz"
+            android:label="Jazz Music"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Pop"
+            android:label="Pop Music"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Instrumental"
+            android:label="Instrumental Music"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".nowplaying"
+            android:label="Playlist" />
     </application>
 
 </manifest>

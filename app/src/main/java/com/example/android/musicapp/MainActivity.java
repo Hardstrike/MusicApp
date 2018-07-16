@@ -1,22 +1,18 @@
 package com.example.android.musicapp;
 
+
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.example.android.musicapp.Country;
-import com.example.android.musicapp.Instrumental;
-import com.example.android.musicapp.Pop;
 import com.example.android.musicapp.R;
-import com.example.android.musicapp.Jazz;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity implements OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,51 +20,51 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView country = (TextView) findViewById(R.id.Country);
+        TextView jazz = (TextView) findViewById(R.id.Jazz);
+        TextView instrumental = (TextView) findViewById(R.id.Instrumental);
+        TextView pop = (TextView) findViewById(R.id.Pop);
 
-        country.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        country.setOnClickListener(this);
+        jazz.setOnClickListener(this);
+        instrumental.setOnClickListener(this);
+        pop.setOnClickListener(this);
+
+    }
+
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()) {
+
+            case R.id.Country:
 
                 Intent countryIntent = new Intent(MainActivity.this, Country.class);
 
                 startActivity(countryIntent);
-            }
-        });
 
-        TextView jazz = (TextView) findViewById(R.id.Jazz);
-
-        jazz.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                break;
+            case R.id.Jazz:
 
                 Intent jazzIntent = new Intent(MainActivity.this, com.example.android.musicapp.Jazz.class);
 
                 startActivity(jazzIntent);
-            }
-        });
 
-        TextView instrumental = (TextView) findViewById(R.id.Instrumental);
-
-        instrumental.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                break;
+            case R.id.Instrumental:
 
                 Intent instrumentalIntent = new Intent(MainActivity.this, Instrumental.class);
 
                 startActivity(instrumentalIntent);
-            }
-        });
 
-        TextView pop = (TextView) findViewById(R.id.Pop);
-
-        pop.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
+                break;
+            case R.id.Pop:
 
                 Intent PopIntent = new Intent(MainActivity.this, Pop.class);
 
                 startActivity(PopIntent);
-            }
-        });
+
+                break;
+        }
     }
 }
